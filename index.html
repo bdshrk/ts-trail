@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="dist/style.css">
+        <link rel="stylesheet" href="dist/item_style.css">
+        <script src="dist/characterinv.js"></script>
+        <script src="dist/item.js"></script>
+        <script src="dist/character.js"></script>
+        <script src="dist/enemy.js"></script>
+        <script src="dist/effect.js"></script>
+        <script src="dist/event.js"></script>
+        <script src="dist/combat.js"></script>
+        <script src="dist/main.js"></script>
+    </head>
+    <body onload="setUp()">
+        <div class="game-area">
+            <div id="text-area"></div>
+            <div id="btn-area-ooc" class="btn-area">
+                <p id="next-turn">Next turn!</p>
+            </div>
+            <div id="btn-area-c" class="btn-area">
+                <p id="attack-0">Attack!</p>
+                <!--<p id="attack-1">Strong Attack!</p>-->
+                <p id="defend">Defend!</p>
+            </div>
+            <div id="btn-area-targets" class="btn-area">
+
+            </div>
+            
+            
+            <div id="playspace">
+                <div id="player-area-panel" class="area">
+                    <h2>Party:</h2>
+                    <div id="add-player-area">
+                        <p>Enter the player name:</p>
+                        <input id="add-player-text" type="text" autofocus>
+                    </div>
+                    <div id="player-area"></div>
+                </div>
+                <div class="margin-area"></div>
+                <div id="other-area-panel" class="area">
+                    <h2>Others:</h2>
+                    <div id="other-area">
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="inv-area" class="area">
+                <h2>Inventory:</h2>
+                <ul id="inv">
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="tt" class="tt-hidden">
+            <p id="tt-text"></p>
+        </div>
+    </body>
+</html>

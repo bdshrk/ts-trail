@@ -1,0 +1,103 @@
+.style_text_command {
+    color: #808080;
+    font-style: italic;
+}
+
+.style_text_regular {
+    color: #ffffff;
+}
+
+.style_text_meta {
+    color: #808080;
+}
+
+.style_wood {
+    color: #966f33;
+}
+
+.style_gold {
+    color: #ffd700;
+}
+
+@keyframes style_legendary_red_anim {
+    0% {
+        color: #e35c22;
+        text-shadow: 0 0 6px #f2a685;
+    }
+    50% {
+        color: #cf0303; 
+        text-shadow: 0 0 12px #fa8787;
+    }
+    100% { 
+        color: #e35c22;
+        text-shadow: 0 0 6px #f2a685;
+    }
+}
+.style_legendary_red {
+    color: #cf0303;
+    animation: style_legendary_red_anim 5s infinite;
+}
+
+.style_herb_light {
+    color: #30db58;
+}
+
+.style_herb_dark {
+    color: #087835;
+}
+
+.style_brown_metal {
+    color: #e1c16e;
+}
+
+.style_offwhite_green {
+    color: #dcf5d7;
+}
+
+.style_poison {
+    color: #6300d4;
+}
+
+.style_offwhite_yellow {
+    color: #ebdfc5;
+}
+
+.style_blood_red {
+    color: #800a08;
+}
+
+.style_iron {
+    color: #c6c9cc;
+}
+
+.style_leather {
+    color: #553619
+}
+
+.style_medicine {
+    color: #e42222;
+    text-shadow: 0 0 4px #ffffff;
+}
+
+.style_food {
+    color: #a75911;
+}
+
+@keyframes style_consumable_anim {
+    0% {
+        color: #ffffff;
+        text-shadow: 0 0 0px #ffffff;
+    }
+    50% {
+        color: #4cb4fa;
+        text-shadow: 0 0 4px #ffffff;
+    }
+    100% {
+        color: #ffffff;
+        text-shadow: 0 0 0px #ffffff;
+    }
+}
+.style_consumable {
+    color: #ffffff;
+    animation: style_consumable_anim 5s infinite;
+}

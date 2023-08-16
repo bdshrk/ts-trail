@@ -1,0 +1,160 @@
+body {
+    font-family: 'Verdana', 'Fira Sans', sans-serif;
+    /* font-weight: bold; */
+    font-size: 13px;
+    background-color: black;
+    color: white;
+}
+
+p {
+    margin: 0.25em 0;
+}
+
+.area {
+    /* padding: 1em;
+    box-sizing: border-box; */
+}
+
+h2 {
+    margin: 0.25em 0;
+}
+
+.char-name {
+    
+}
+.char-health, .char-effects {
+    margin-left: 1em;
+}
+.char-health-high {
+    color: lime;
+}
+.char-health-mid {
+    color: yellow
+}
+.char-health-low {
+    color: orangered;
+}
+
+ul {
+    margin: 0;
+}
+
+#text-area {
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    /* display: flex;
+    justify-content: flex-end;
+    flex-direction: column; */
+}
+.btn-area {
+    user-select: none;
+    display: flex;
+    gap: 0.5em;
+    padding: 0.5em 0;
+}
+
+.inv-use {
+    outline: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-area > p {
+    display: inline-block;
+    margin: 0;
+    padding: 1em;
+    cursor: pointer;
+    outline: 1px solid white;
+}
+.btn-area > p:hover {
+    color: #dbdbdb;
+}
+
+#playspace {
+    display: flex;
+}
+
+#player-area-panel, #other-area-panel {
+    width: 50%;
+}
+
+input[type="text"] {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.character {
+    display: block;
+    width: 100%;
+    padding: 0.2em;
+    box-sizing: border-box;
+    outline: 1px solid white;
+}
+
+.character + .character {
+    margin-top: 0.5em;
+}
+
+.char-dead {
+    background-color: darkred;
+}
+
+.line {
+    line-height: normal;
+    margin: 0;
+}
+.line-0 {
+    color: #fff;
+}
+.line-1 {
+    color: #ddd;
+}
+.line-2 {
+    color: #bbb;
+}
+.line-3 {
+    color: #999;
+}
+
+.btn-area-hidden {
+    display: none;
+}
+
+.game-area {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.margin-area {
+    margin: 0 0.5em;
+}
+
+#tt {
+    position: fixed;
+    padding: 0.5em;
+    outline: 1px solid white;
+    background: black;
+    user-select: none;
+}
+
+#tt-text {
+    display: block;
+    overflow: hidden;
+    height: max-content;
+    width: max-content;
+}
+
+.tt-hidden {
+    display: none;
+}
+
+#inv > li + li {
+    border-top: 1px solid white;
+}
