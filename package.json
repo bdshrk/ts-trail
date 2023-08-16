@@ -1,0 +1,17 @@
+{
+  "name": "newtrail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "build": "tsc && esbuild src/style.css --minify --outfile=dist/style.css &&  esbuild src/item_style.css --minify --outfile=dist/item_style.css "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.17.13",
+    "typescript": "^5.0.2"
+  }
+}
